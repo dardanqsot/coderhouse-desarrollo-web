@@ -1,0 +1,58 @@
+/* comentario */
+section h2{
+    color: green;
+}
+
+/* estilos mediante class*/
+
+.colorVerde{
+    color: greenyellow;
+}
+
+/* estilos mediante id */
+
+#colorRojo{
+    color: red;
+}
+
+/* importancia de aplicar estilos*/
+
+h3{
+    color: pink;
+}
+
+.colorAmarillo{
+    color: yellow;
+}
+
+#colorRed{
+    color: red;
+}
+
+
+/* propiedades nuevas*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/homero-calor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: sandybrown;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ul li{
+    list-style: none;
+    color: red;
+    background-color: salmon;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
