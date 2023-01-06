@@ -1,0 +1,87 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos de producto*/
+
+.producto{
+    background-color: tomato;
+    padding: 50px 100px 10px 70px;
+    margin-bottom: 100px;
+}
+
+/* estilos de segmento */
+
+.segmento{
+    background-color: violet;
+    padding: 50px 100px 10px 70px;
+    
+}
+
+/*estilos padre */
+
+.padre{
+    background-color: yellowgreen;
+}
+
+/* estilos hijos */
+
+.padre__hijo{
+    background-color: tomato;
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+}
+
+/* ejemplo de ocultar elementos */
+
+.padre__hijo--none{
+    display: none;
+}
+
+
+/*ejemplo de position relative */
+
+.item-relative{
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+
+/*ejemplo de position absolute*/
+
+.item-absolute{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+/* ejemplo de position fixed */
+
+.item-fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* estilos del menu*/
+
+.menu{
+    background-color: coral;
+    position: sticky;
+    top: 50px;
+    z-index: 2;
+    
+}
+
+.menu ul li{
+    background-color: chocolate;
+    margin: 10px;
+    padding: 10px;
+
+    display: inline-block ;
+}
