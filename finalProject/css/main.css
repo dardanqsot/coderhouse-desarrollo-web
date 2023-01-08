@@ -1,0 +1,81 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+/* propiedades del contenedor*/
+.contenedor{
+    height: 800px;
+    background-color: tomato;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*propiedades de los hijos*/
+
+.hijos{
+    background-color: wheat;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+/* estilos generales */
+body{
+    background-color: tomato;
+}
+
+/* estilos de header */
+
+header{
+    background-color: rgb(236, 125, 105);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+header nav ul li{
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* estilos de main */
+
+main{
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.noticia-uno, .noticia-dos{
+    text-align: center;
+    width: 300px;
+}
+
+.noticia-uno h2, .noticia-dos h2{
+    margin-bottom: 30px;
+}
+
+/* estilos de footer*/
+
+footer{
+    text-align: center;
+}
