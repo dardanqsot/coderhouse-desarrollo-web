@@ -11,39 +11,67 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <title>Proyectos - Mi Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>Mi Portfolio</h1>
-      <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="about.html">Acerca de mí</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
-    </header>
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">DARDAN</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="about.html">Acerca de mí</a></li>
+            <li><a href="cv.html">Curriculum </a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
-      <section id="projects">
-        <h2>Proyectos</h2>
-        <ul>
-          <li>
-            <h3>Proyecto 1</h3>
-            <p>Breve descripción del proyecto 1.</p>
-            <a href="detalle.html">Ver detalles</a>
-          </li>
-          <li>
-            <h3>Proyecto 2</h3>
-            <p>Breve descripción del proyecto 2.</p>
-            <a href="detalle.html">Ver detalles</a>
-          </li>
-          <li>
-            <h3>Proyecto 3</h3>
-            <p>Breve descripción del proyecto 3.</p>
-            <a href="detalle.html">Ver detalles</a>
-          </li>
-        </ul>
-      </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+          <h2>PORTFOLIO</h2>
+          <div class="galeria">
+              <div class="proyecto">
+                  <img src="../img/pro1.png" alt="">
+                  <div class="overlay">
+                      <h3>Negocio</h3>
+                      <p>Pagina web para sistema de reportería </p>
+                  </div>
+              </div>
+              <div class="proyecto">
+                  <img src="../img/pro2.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Envio de correos</h3>
+                      <p>Servicio para envio de correos</p>
+                  </div>
+              </div>
+              <div class="proyecto">
+                  <img src="../img/pro3.jpg" alt="">
+                  <div class="overlay">
+                      <h3>ChatBot</h3>
+                      <p>ChatBot utilizando IBM Watson</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
     </main>
+
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://twitter.com/dardanqsot"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/dardanqsot/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/dardanqsot"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
   </body>
 </html>
