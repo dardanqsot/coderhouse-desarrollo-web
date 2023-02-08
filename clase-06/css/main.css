@@ -1,0 +1,131 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos del contenedor */
+.contenedor{
+    height: 800px;
+    display: grid;
+    /* tenemos que declarar sus filas y sus columnas*/
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 20px;
+}
+
+
+/* estilos de los hijos */
+
+.hijo-uno{
+    background-color: aquamarine;
+}
+
+.hijo-dos{
+    background-color: brown;
+}
+
+.hijo-tres{
+    background-color: chocolate;
+}
+
+.hijo-cuatro{
+    background-color: tomato;
+}
+
+
+/* estilos de ejemplo */
+
+
+/* estilos del padre*/
+.ejemplo{
+    background-color: tomato;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr) ;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* estilos de los hijos*/
+
+.imagen-uno{
+    background-color: thistle;
+    justify-self: right;
+    align-self: start;
+}
+
+
+/* ejemplo de caja */
+
+.caja{
+    background-color: teal;
+}
+
+.hijo-caja{
+    width: 350px;
+    height: 350px;
+    background-color: tomato;
+    margin: 5px;
+    padding: 50px;
+}
+
+/* estilos de ejemplo-dos*/
+
+/* estilo de container */
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr ;
+    grid-template-rows: 0.5fr 3fr 1fr 0.5fr ;
+
+    /* grid template areas*/
+    grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "section-uno section-dos aside"
+        "footer footer footer";
+
+    gap: 10px;
+}
+
+/* estilos de los items*/
+header{
+    background-color: tomato;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: rgb(229, 125, 106);
+    grid-area: main;
+}
+
+.section-uno{
+    background-color: rgb(170, 95, 82);
+    grid-area: section-uno;
+}
+
+.section-dos{
+    background-color: rgb(120, 50, 37);
+    grid-area: section-dos;
+}
+
+aside{
+    background-color: rgb(119, 23, 6);
+    grid-area: aside;
+}
+
+footer{
+    background-color: rgb(192, 123, 110);
+    grid-area: footer;
+}
+
